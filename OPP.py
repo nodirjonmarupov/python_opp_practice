@@ -43,3 +43,22 @@ class Mashina(Transport):
 m=Mashina("BMW", 220, "qora")
 print(m.info())
 
+# mashq
+
+class Maxsulot:
+    def __init__(self, nom,narx,chegirma,kategoriya):
+        self.nom=nom
+        self.narx=narx
+        self.chegirma=chegirma
+        self.kategoriya=kategoriya
+        
+
+    def chegirmali_narx(self):
+        return self.narx-(self.narx* self.chegirma /100)
+    def info(self):
+        return f"Maxsulot: {self.nom}, tan narxi: {self.narx}, hozirda {self.chegirma}% chegirmada, yakuniy narx:{self.chegirmali_narx()}$, kategoriya:{self.kategoriya}"
+    
+q=Maxsulot("Iphone 17",1200,20,"Elektronika")
+
+print(q.info())
+
