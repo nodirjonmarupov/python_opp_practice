@@ -43,7 +43,7 @@ class Mashina(Transport):
 m=Mashina("BMW", 220, "qora")
 print(m.info())
 
-# mashq
+# mashq 1:
 
 class Maxsulot:
     def __init__(self, nom,narx,chegirma,kategoriya):
