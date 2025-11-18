@@ -34,7 +34,56 @@ acc=BankAccount("Vali",5000)
 acc.set_balance(-100)
 print(acc.get_balance())
 
+# POLYMORPHISIM- kod orqali tushunish
 
+class Dog:
+    def speak(self):
+        return "wooof"
+    
+class Cat:
+    def speak(self):
+        return "meow"
+    
+class Human:
+    def speak(self):
+        return "hello"
+    
+animals= [Dog(), Cat(), Human()]
+for a in animals:
+    print(a.speak())
+# terminal:
+        # wooof
+        # meow 
+        # hello   
+
+# ABSTRACT CLASS+METHOD OVERRIDING
+
+from abc import ABC, abstractmethod
+
+# class Car(ABC):
+#      def start(self):
+#          pass
+# class Tesla(Car):
+#     def start(self):
+#         return "Tesla started"
+# t=Tesla()
+# print(t.start())
+
+class Animal(ABC):
+    def sound(self):
+        pass
+class Dog(Animal):
+    def sound(self):
+        return "Woof"
+
+class Cat(Animal):
+    def sound(self):
+        return "meow"
+a=Dog()
+print(a.sound())
+
+b=Cat()
+print(b.sound())
 
 
     
