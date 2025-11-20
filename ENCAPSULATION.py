@@ -1,16 +1,16 @@
 # _balance > protected(o'zgartirilishi kerak emas)
 # __balance > private(tashqaridan umuman korinmaydi)
 
-# class BankAccount:
-#     def __init__(self, owner, balance):
-#         self.owner=owner
-#         self._balance=balance
-#         self.__pin=1234
+class BankAccount:
+    def __init__(self, owner, balance):
+        self.owner=owner
+        self._balance=balance
+        self.__pin=1234
         
-# acc=BankAccount("Ali",2000)
-# acc._balance=5000
-# print(acc.owner)
-# print(acc._balance)
+acc=BankAccount("Ali",2000)
+acc._balance=5000
+print(acc.owner)
+print(acc._balance)
 
  # GETTER & SETTER
 
@@ -60,14 +60,14 @@ for a in animals:
 
 from abc import ABC, abstractmethod
 
-# class Car(ABC):
-#      def start(self):
-#          pass
-# class Tesla(Car):
-#     def start(self):
-#         return "Tesla started"
-# t=Tesla()
-# print(t.start())
+class Car(ABC):
+     def start(self):
+         pass
+class Tesla(Car):
+    def start(self):
+        return "Tesla started"
+t=Tesla()
+print(t.start())
 
 class Animal(ABC):
     def sound(self):
