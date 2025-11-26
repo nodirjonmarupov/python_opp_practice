@@ -1,39 +1,39 @@
-# class A:
-#     def feature_a(self):
-#         print("Feature A")
+class A:
+    def feature_a(self):
+        print("Feature A")
 
-# class B:
-#     def feature_b(self):
-#         print("Feature B")
+class B:
+    def feature_b(self):
+        print("Feature B")
 
-# class C(A,B):
-#     pass
+class C(A,B):
+    pass
    
-# # test
+# test
 
-# c=C()
-# c.feature_a()
-# c.feature_b()
-#--- Feature A
+c=C()
+c.feature_a()
+c.feature_b()
+# --- Feature A
 # ---Feature B
 
 # super() ishlaydigan:
 
-# class A:
-#     def show(self):
-#         print("A -> show()")
+class A:
+    def show(self):
+        print("A -> show()")
 
-# class B:
-#     def show(self):
-#         print("B-> show()")
+class B:
+    def show(self):
+        print("B-> show()")
 
-# class C(A,B):
-#     def show(self):
-#         print("C-> show()")
-#         super().show()
+class C(A,B):
+    def show(self):
+        print("C-> show()")
+        super().show()
 
-# obj=C()
-# obj.show()
+obj=C()
+obj.show()
 
 # DIAMOND PROBLEM
 

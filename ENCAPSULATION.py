@@ -84,6 +84,3 @@ print(a.sound())
 
 b=Cat()
 print(b.sound())
-
-
-    
